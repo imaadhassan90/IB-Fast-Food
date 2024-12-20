@@ -1,0 +1,82 @@
+/* Root Variables for Color Palette */
+:root {
+  --color1: skyblue;
+  --color2: skyblue;
+  --color3: #57aae6;
+  --color4: #6eb8ee;
+  --color5: #2a6f97;
+  --color6: #2c7da0;
+  --color7: #468faf;
+  --color8: #61a5c2;
+  --color9: #89c2d9;
+  --color10: #a9d6e5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color10); /* Light background for contrast */
+  color: var(--color1); /* Dark text for readability */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color3); /* Darker header */
+  padding: 10px;
+  color: white; /* Contrast text */
+}
+
+.header .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color5); /* Accent color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header .website-name {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px;
+  color: var(--color10); /* Light text */
+}
+
+.header .login {
+  text-align: right;
+  color: var(--color10); /* Light text */
+}
+
+.main {
+  background-color: var(--color8); /* Main content background */
+  margin: 10px;
+  border: 2px solid var(--color6); /* Border with a subtle color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: var(--color2); /* Text color */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color3); /* Same as header for consistency */
+  padding: 10px;
+  color: white; /* Contrast text */
+}
